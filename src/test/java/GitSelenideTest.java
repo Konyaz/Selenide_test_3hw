@@ -21,7 +21,7 @@ public class GitSelenideTest {
         $("[name=q]").setValue("selenide").pressEnter();
         $$("ul.repo-list li").first().$("a").click();
         $(byText("Wiki")).click();
-        $("#wiki-pages-box").shouldHave(text("SoftAssertions"));
+        $("#wiki-pages-box").$(byText("SoftAssertions")).click();
         $(byText("SoftAssertions")).click();
         $("#wiki-body").shouldHave(text("Using JUnit5 extend test class:"));
 
