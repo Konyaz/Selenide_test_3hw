@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Selenide.open;
 
-
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
 
@@ -24,7 +23,5 @@ public class GitSelenideTest {
         $("#wiki-pages-box").$(byText("SoftAssertions")).click();
         $(byText("SoftAssertions")).click();
         $("#wiki-body").shouldHave(text("Using JUnit5 extend test class:"));
-
-
     }
 }
